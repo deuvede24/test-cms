@@ -1,0 +1,12 @@
+{
+  "webs": [
+    {
+      "ruta": "main",
+      "file": "web/main.html"
+    },
+    {
+      "ruta": "dssads",
+      "file": "web/dssads.html"
+    }
+  ]
+}
