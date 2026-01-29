@@ -4,7 +4,9 @@ require("hbs");
 const myWeb = require("./myweb");
 
 const app = express();
-const PORT = 3000;
+//const PORT = 3000;
+
+const PORT = process.env.PORT || 3000;
 
 //View engine
 app.set("view engine", "hbs");
@@ -107,6 +109,9 @@ app.get("/:slug", async (req, res) => {
 });
 
 //Iniciar servidor
-app.listen(PORT, () => {
+/*app.listen(PORT, () => {
   console.log(`Servidor iniciado en http://localhost:${PORT}`);
+});*/
+app.listen(PORT, () => {
+  console.log(`Servidor iniciado en puerto ${PORT}`);
 });
